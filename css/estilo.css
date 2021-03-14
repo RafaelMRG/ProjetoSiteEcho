@@ -1,5 +1,6 @@
 body{
 	background-color:#669900;font-family: Verdana, sans-serif;
+	color: black;
 }
 div{
 	padding: 0px;
@@ -91,10 +92,23 @@ html {
 .glow:hover{
 	position: relative;
 	box-shadow: -1px 0px rgba(0,0,0,0.6),0px 5px 0px 0px rgb(137, 196, 0)inset;
+	/* box-shadow: 0px -2px rgba(0,0,0,0.6); */
 	border-top-left-radius: 2px;
 	border-top-right-radius: 3px;
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-	/* border-top: 2px solid rgba(0,0,0,0.3); */
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 1),0px 1px 5px rgba(0, 0, 0, 0.3);
+	-o-transition: all 0.10s ease-out;
+	-moz-transition: all 0.10s ease-out;
+	-webkit-transition: all 0.10s ease-out;
+	transition: all 0.10s ease-out;
+	color: rgba(137, 196, 0, 0.987);
+}
+
+td.glow{
+	-o-transition: all 0.10s ease-in;
+	-moz-transition: all 0.10s ease-in;
+	-webkit-transition: all 0.10s ease-in;
+	transition: all 0.10s ease-in;
+	color: rgba(0, 0, 0, 0.8);
 }
 .altura50px{
 	height: 50px;
@@ -104,7 +118,7 @@ html {
 }
 .alinhamento{
 	text-align: center;
-	  vertical-align: middle;
+	vertical-align: middle;
 	align-content: stretch;
 	align-items: stretch;
 }
@@ -113,5 +127,56 @@ html {
 	transform:translateY(50%);
 	display: inline-table;
 	white-space: pre-wrap;
-	color: rgba(0, 0, 0, 0.8);
+	color: inherit;
+}
+/* .span_menu:hover{
+	color:whitesmoke;
+	
+} */
+
+.link-menu{
+	display: block;
+	text-decoration: none;
+	top: 0;
+	left: 0;
+	margin: auto;
+	height: 100%;
+	-o-transition: 0.25s ease-out;
+	-moz-transition: 0.25s ease-out;
+	-webkit-transition: 0.25s ease-out;
+	transition: 0.25s ease-out;
+	color: inherit;
+}
+
+.content{
+	position: relative;
+	width: 97%;
+	background-color: #77b300;
+	top: 210px;
+	margin: auto;
+	border-radius: 6px;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	/* background-image: url("/imagens/textura.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply; */
+}
+.content:before{
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url("/imagens/logobackground.svg");
+	background-size: 45%;
+	opacity: 5%;
+	background-position: -100px;
+	mix-blend-mode: multiply;
+	background-repeat: no-repeat;
+	/* background-blend-mode: multiply; */
+	border-radius: 6px;
+	overflow: hidden;
 }
