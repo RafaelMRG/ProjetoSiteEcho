@@ -1,0 +1,117 @@
+body{
+	background-color:#669900;font-family: Verdana, sans-serif;
+}
+div{
+	padding: 0px;
+	margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+/* font-family: 'Alata', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Iceland', cursive;
+font-family: 'Jockey One', sans-serif;
+font-family: 'MuseoModerno', cursive; */
+
+.shadowed {
+	/*width: 180px;*/
+	-webkit-filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.3));
+	filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.3));
+}	
+.container{
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+}
+.col-0 {width: 0%;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px;
+  /*border: 1px solid red;*/
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.menutop{
+	top:100px;
+	position:relative;
+}
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+.shadowmenu{
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+.m-cornerleft{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.m-cornerright{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.menu{
+	background-color: #77b300;
+	height: 50px;
+	top: 100px;
+	font-family: 'Dosis', sans-serif;
+}
+.menu:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  z-index: -1;
+  border-radius: 5px;
+  }
+.divisor_menu{
+	box-shadow:
+	-1px 0px rgba(0,0,0,0.6)
+	;
+	position: relative;
+  }
+.glow:hover{
+	position: relative;
+	box-shadow: -1px 0px rgba(0,0,0,0.6),0px 5px 0px 0px rgb(137, 196, 0)inset;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 3px;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+	/* border-top: 2px solid rgba(0,0,0,0.3); */
+}
+.altura50px{
+	height: 50px;
+}
+.altura100pc{
+	height: 100%;
+}
+.alinhamento{
+	text-align: center;
+	  vertical-align: middle;
+	align-content: stretch;
+	align-items: stretch;
+}
+.span_menu{
+	position: relative;
+	transform:translateY(50%);
+	display: inline-table;
+	white-space: pre-wrap;
+	color: rgba(0, 0, 0, 0.8);
+}
