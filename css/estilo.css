@@ -259,10 +259,6 @@ td.glow{
 	color: rgb(5,5,5);
 	padding: 8px 15px 10px 15px;
 	padding-bottom: 10px;
-	-o-transition: 0.25s ease;
-	-moz-transition: 0.25s ease;
-	-webkit-transition: 0.25s ease;
-	transition: 0.25s ease;
 }
 .conteudo_ft i{
 	padding-right: 10px;
@@ -273,6 +269,8 @@ td.glow{
 	border-radius: 100vh;
 	color: #2A4000;
 	background-color: white;
+}
+.conteudo_ft a,a:hover{
 	-o-transition: 0.25s ease;
 	-moz-transition: 0.25s ease;
 	-webkit-transition: 0.25s ease;
