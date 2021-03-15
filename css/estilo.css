@@ -212,10 +212,17 @@ td.glow{
 	padding: 50px;
 	display: flex;
 }
+.foot_div a{
+	font-family: 'Alata', sans-serif;
+	font-weight: 600;
+	/* font-family: 'Dosis', sans-serif; */
+	/* font-family: 'Iceland', cursive; */
+	/* font-family: 'Jockey One', sans-serif; */
+	/* font-family: 'MuseoModerno', cursive; */
+}
 .imagem_footer{
 	max-height: 250px;
-	margin-left: 10px;
-	opacity: 90%;
+	opacity: 85%;
 }
 
 .divider_ft{
@@ -228,6 +235,46 @@ td.glow{
 .conteudo_ft{
 	width: 100%;
 	height: 100%;
-	margin: auto;
+}
+.conteudo_ft ul,li{
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.conteudo_ft ul{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 70%;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+}
+.conteudo_ft li{
+	flex-flow: row wrap;
+	align-items: center;
+}
+.conteudo_ft a{
+	text-decoration: none;
+	color: rgb(5,5,5);
+	padding: 8px 15px 10px 15px;
+	padding-bottom: 10px;
+	-o-transition: 0.25s ease;
+	-moz-transition: 0.25s ease;
+	-webkit-transition: 0.25s ease;
+	transition: 0.25s ease;
+}
+.conteudo_ft i{
+	padding-right: 10px;
+	padding-top: 4px;
+}
+.conteudo_ft a:hover{
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	border-radius: 100vh;
+	color: #2A4000;
 	background-color: white;
+	-o-transition: 0.25s ease;
+	-moz-transition: 0.25s ease;
+	-webkit-transition: 0.25s ease;
+	transition: 0.25s ease;
 }
