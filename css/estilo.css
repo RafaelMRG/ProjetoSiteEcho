@@ -93,17 +93,13 @@ html {
   border-radius: 5px;
   }
 .divisor_menu{
-	box-shadow:
-	-1px 0px rgba(0,0,0,0.6)
-	;
+	border-left: 1px solid darkslategray;
 	position: relative;
   }
 .glow:hover{
 	position: relative;
-	box-shadow: -1px 0px rgba(0,0,0,0.6),0px 5px 0px 0px rgb(137, 196, 0)inset;
+	box-shadow: 0px 5px 0px 0px rgb(137, 196, 0)inset;
 	/* box-shadow: 0px -2px rgba(0,0,0,0.6); */
-	border-top-left-radius: 2px;
-	border-top-right-radius: 3px;
 	text-shadow: 0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 5px rgba(0, 0, 0, 1);
 	-o-transition: all 0.10s ease-out;
 	-moz-transition: all 0.10s ease-out;
@@ -257,6 +253,7 @@ td.glow{
 .conteudo_ft a{
 	text-decoration: none;
 	color: rgb(5,5,5);
+	margin: 2px 0px 2px 0px;
 	padding: 8px 15px 10px 15px;
 	padding-bottom: 10px;
 }
@@ -269,6 +266,7 @@ td.glow{
 	border-radius: 100vh;
 	color: #2A4000;
 	background-color: white;
+	text-shadow: 1px 2px 1.5px silver;
 }
 .conteudo_ft a,a:hover{
 	-o-transition: 0.25s ease;
