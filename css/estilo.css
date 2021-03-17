@@ -101,8 +101,10 @@ html {
 	position: relative;
 	box-shadow: 0px 7px 0px 0px rgb(137, 196, 0)inset;
 	/* box-shadow: 0px -2px rgba(0,0,0,0.6); */
-	text-shadow: 0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 5px rgba(0, 0, 0, 1);
-	color: rgba(137, 196, 0, 0.987);
+	/* text-shadow: 0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 1px black,0px 0px 5px rgba(0, 0, 0, 0.5); */
+	/* color: rgb(137, 196, 0); */
+	color: rgb(50, 50, 50);
+	background-color: ghostwhite;
 }
 td.glow{
 	-o-transition: all 0.10s ease-in;
@@ -110,6 +112,40 @@ td.glow{
 	-webkit-transition: all 0.10s ease-in;
 	transition: all 0.10s ease-in;
 	color: rgba(0, 0, 0, 0.85);
+	box-shadow: 0px 50px 0px 0px transparent inset;
+}
+td.glow2{
+	-o-transition: all 0.10s ease-in;
+	-moz-transition: all 0.10s ease-in;
+	-webkit-transition: all 0.10s ease-in;
+	transition: all 0.10s ease-in;
+	position: relative;
+	z-index: 2;
+	color: rgba(0, 0, 0, 0.85);
+}
+td.glow2:hover{
+	color: rgb(50, 50, 50);
+}
+td.glow2:hover:after{
+	background-color: ghostwhite;
+	border-top: 7px solid rgb(137, 196, 0);
+	border-radius: 0px 5px 5px 0px;
+}
+td.glow2:after{
+	position: absolute;
+	z-index: -1;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+	border-top: 50px solid transparent;
+	border-radius: 0px 5px 5px 0px;
+	-o-transition: all 0.10s ease-in;
+	-moz-transition: all 0.10s ease-in;
+	-webkit-transition: all 0.10s ease-in;
+	transition: all 0.10s ease-in;
 }
 .altura50px{
 	height: 50px;
@@ -180,7 +216,7 @@ td.glow{
 	position: absolute;
 	background-image: url("/imagens/logobackground.svg");
 	background-size: 1000px;
-	opacity: 2.75%;
+	opacity: 3.75%;
 	background-position: -250px;
 	mix-blend-mode: multiply;
 	background-repeat: no-repeat;
@@ -308,13 +344,13 @@ td.glow{
 	opacity: 100%;
 	/* max-width: 100%; */
 	width: 100%;
-	-webkit-filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.6));
+	-webkit-filter: drop-shadow(0px 1px 3px rgba(0,0,0,0.3));
 	filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.6));
 	-o-transition: 0.25s cubic-bezier(.7,0,.3,1);
 	-moz-transition: 0.25s cubic-bezier(.7,0,.3,1);
 	-webkit-transition: 0.25s cubic-bezier(.7,0,.3,1);
 	transition: 0.25s cubic-bezier(.7,0,.3,1);
-	filter: brightness(1) drop-shadow(0px 1px 4px rgba(0,0,0,0.4));
+	filter: brightness(1) drop-shadow(0px 1px 3px rgba(0,0,0,0.3));
 }
 #ecodiagnosticadiv > a{
 	width: 70%;
