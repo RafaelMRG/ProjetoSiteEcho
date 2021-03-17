@@ -24,7 +24,7 @@ font-family: 'MuseoModerno', cursive; */
 	/*width: 180px;*/
 	-webkit-filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.3));
 	filter: drop-shadow(1px 1px 5px rgba(0,0,0,0.3));
-}	
+}
 .container{
 	margin-left: 12.5%;
 	margin-right: 12.5%;
@@ -132,7 +132,7 @@ td.glow{
 }
 /* .span_menu:hover{
 	color:whitesmoke;
-	
+
 } */
 
 .link-menu{
@@ -158,12 +158,18 @@ td.glow{
 	margin-bottom: 100px;
 	border-radius: 6px;
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.6);
+	-moz-user-select: all;
+	-khtml-user-select: all;
+	-webkit-user-select: all;
+	-ms-user-select: all;
+	user-select: all;
 	/* background-image: url("/imagens/textura.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-blend-mode: multiply; */
 }
 .content:before{
+	z-index: 0;
 	content: "";
 	top: 0;
 	bottom: 0;
@@ -173,9 +179,9 @@ td.glow{
 	height: 100%;
 	position: absolute;
 	background-image: url("/imagens/logobackground.svg");
-	background-size: 45%;
-	opacity: 5%;
-	background-position: -100px;
+	background-size: 1000px;
+	opacity: 2.75%;
+	background-position: -250px;
 	mix-blend-mode: multiply;
 	background-repeat: no-repeat;
 	/* background-blend-mode: multiply; */
@@ -256,7 +262,7 @@ td.glow{
 .conteudo_ft li{
 	flex-flow: row wrap;
 	align-items: center;
-	
+
 }
 .conteudo_ft a{
 	text-decoration: none;
@@ -318,3 +324,56 @@ td.glow{
 	opacity: 80%;
 }
 
+.conteudo-corpo{
+	padding: 50px 60px 80px 60px;
+	font-family: 'Alata', sans-serif;
+	-moz-user-select: text;
+	-khtml-user-select: text;
+	-webkit-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	position: relative;
+}
+.conteudo-corpo p{
+	padding: 2px 120px 2px 120px;
+	color: rgb(20, 20, 20);
+	text-shadow: 1px 1px 10px rgba(0,0,0,.4);
+}
+
+.titulo{
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.titulo h1{
+	padding: 0;
+	padding-left: 30px;
+	margin: 0;
+	padding-bottom: 10px;
+	color: rgb(15, 15, 15);
+}
+.titulo h1 img{
+	height: 1.75em;
+	vertical-align: middle;
+	padding-bottom: 10px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	pointer-events: none;
+
+}
+.titulo	+ p{
+	padding-top: 30px;
+}
+
+#logolineup{
+	filter: saturate(1.2) contrast(1.1);
+	opacity: 92%;
+	border: 1px solid rgba(240, 248, 255, 0.5);
+	position: relative;
+	width: 81%;
+	margin: 50px auto 50px auto;
+	display: flex;
+	align-self: center;
+	border-radius: 1px;
+}
