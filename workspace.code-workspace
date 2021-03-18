@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\UNIP\\PWR"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ProjetoSiteEcho"
+	}
+}
