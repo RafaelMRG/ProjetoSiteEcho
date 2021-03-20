@@ -1,6 +1,6 @@
+/* 🔸ESTLILIZAÇÃO RESET GERAL🔸 */
 body{
-	background-color:#669900;font-family: Verdana, sans-serif;
-	color: black;
+	background-color:#669900;
 }
 html, body{
 	height: 95%;
@@ -13,6 +13,20 @@ div{
 * {
   box-sizing: border-box;
 }
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+/*//////////////////////////*/
+
+/* 🔸ESTLILIZAÇÃO QUANDO SELECIONAR TEXTO, ETC🔸 */
+*::selection{
+	color: yellowgreen;
+	background-color: rgba(47, 79, 79, 1);
+}
+/*//////////////////////////*/
+
 a, a:active, a:focus, a:visited{ outline: none;}
 /* font-family: 'Alata', sans-serif;
 font-family: 'Dosis', sans-serif;
@@ -50,19 +64,11 @@ font-family: 'MuseoModerno', cursive; */
   /* padding: 0px; */
   /*border: 1px solid red;*/
 }
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .menutop{
 	margin-top: 100px;
 	/* top:100px; */
 	position:relative;
 	margin-bottom: 120px;
-}
-html {
-  font-family: "Lucida Sans", sans-serif;
 }
 .shadowmenu{
 	box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
@@ -370,11 +376,10 @@ td.glow2:after{
 	color: rgb(25, 25, 25);
 	text-shadow: 1px 1px 2px rgba(0,0,0,.35);
 }
-.conteudo-corpo p::selection{
+/* .conteudo-corpo p::selection,h1::selection{
 	color: yellowgreen;
 	background-color: rgba(47, 79, 79, 1);
-}
-
+} */
 .titulo{
 	align-self: center;
 	justify-self: center;
