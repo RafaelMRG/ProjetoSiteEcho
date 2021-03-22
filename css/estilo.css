@@ -514,13 +514,12 @@ td.glow2:after{
 	top: 10px;
 	left: 0;
 }
-.header-time:hover img{
+/* .header-time:hover img{
 	transition: all var(--PlayerTransTime);
 	filter: grayscale() brightness(0.8) opacity(0.92)
-}
+} */
 .header-time-a:hover img {
 	transition: all var(--PlayerTransTime) !important;
-	filter: saturate(1) brightness(1) !important;
 	top: 0px;
 	z-index: 4;
 }
@@ -557,4 +556,10 @@ td.glow2:after{
 	border-radius: 9999px;
 	opacity: 80%;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+.fadeout{
+	filter: grayscale() brightness(0.8) opacity(0.92);
+	transition: all var(--PlayerTransTime);
 }
