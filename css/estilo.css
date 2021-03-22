@@ -5,6 +5,8 @@ body{
 	background-color:#669900;
 }
 html, body{
+	scrollbar-color: rgba(126, 252, 0, 0.22) rgba(47, 79, 79, 0.15);
+	scrollbar-width: thin;
 	height: 95%;
 	margin: 0;
 }
