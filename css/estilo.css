@@ -65,6 +65,12 @@ a{
 
 
 a, a:active, a:focus, a:visited{ outline: none;}
+
+:focus{
+	outline: 4px solid rgba(126, 252, 0, 0.4) !important;
+	outline-offset: 3px !important;
+}
+
 /* font-family: 'Alata', sans-serif;
 font-family: 'Dosis', sans-serif;
 font-family: 'Iceland', cursive;
@@ -148,7 +154,7 @@ td.glow{
 }
 td.glow:hover{
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
-	color: rgba(47, 79, 79, 1);
+	color: rgb(20, 73, 73);
 }
 td.glow:after{
 	content: "";
@@ -175,7 +181,7 @@ td.glow2{
 td.glow2:hover{
 	/* color: rgb(50, 50, 50); */
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
-	color: rgba(47, 79, 79, 1);
+	color: rgb(20, 73, 73);
 }
 td.glow2:hover:after{
 	/* background-color: ghostwhite; */
@@ -459,7 +465,7 @@ td.glow2:after{
 }
 
 #hover-footer-color>li>a:hover{
-	color: rgba(47, 79, 79, 1);
+	color: rgb(20, 73, 73);
 	text-shadow: 0px 0px 1px rgba(105, 105, 105, 0.4);
 }
 
