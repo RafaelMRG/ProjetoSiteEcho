@@ -452,6 +452,14 @@ td.glow2:after{
 	padding-top: 30px;
 }
 
+.divisor-apr-lista{
+	display: flex;
+	align-self: center;
+	margin-top: 30px;
+	width: 75%;
+	border-bottom: 1px solid rgba(30,30,30,0.15);
+}
+
 #logolineup{
 	filter: saturate(1.2) contrast(1.1);
 	opacity: 92%;
@@ -690,4 +698,70 @@ td.glow2:after{
 	display: flex;
 	padding: 0;
 	padding-right: 20px;
+}
+.lista-servers{
+	display: flex;
+	flex-flow: row nowrap;
+	/* align-content: center; */
+	justify-content: center;
+	margin: 50px 0px 0px 0px;
+}
+.lista-servers iframe{
+	margin-left: 25px;
+	margin-right: 25px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4), 0px 0px 25px rgba(0, 0, 0, 0.6);
+}
+:root{
+	--CorDiscordFaded: #dcddde;
+	--CorDiscordHover: #7289da;
+}
+.discord-server{
+	position: relative;
+	margin-top: 50px;
+	display: flex;
+	align-self: center;
+	width: 150px;
+	height: 35px;
+	background-color: #23272a;
+	border-radius: 5px;
+	user-select: all;
+	border: 1px solid rgba(220, 221, 222, 0.3);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.discord-server i{
+	margin-left: 8px;
+	/* margin-right: 8px; */
+	align-self: center;
+	justify-content: center;
+	display: flex;
+	color: var(--CorDiscordFaded);
+	transition: color 100ms ease;
+}
+.discord-server:hover i{
+	color: var(--CorDiscordHover);
+}
+.discord-server:hover{
+	cursor: grab;
+}
+.discord-server:active{
+	cursor: grabbing;
+}
+.discord-span{
+	display: inline-flex;
+	align-content: center;
+	align-self: center;
+	justify-self: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	height: 24px;
+	line-height: calc(12px + 0.5em);
+	color: #dcddde;
+	border: 1px solid rgba(220, 221, 222, 0.2);
+	border-radius: 4px;
+}
+.discord-span::selection{
+	background-color:hsla(210, 3%, 87%, 0.8);
+	color: #7289da;
 }
