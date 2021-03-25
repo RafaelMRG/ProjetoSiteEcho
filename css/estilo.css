@@ -499,31 +499,36 @@ td.glow2:after{
 }
 
 .header-time-a{
-	margin-left: -30px;  /* MARGEM DE TRANSPOSICAO DAS IMAGENS */
+	margin-left: -70px;  /* MARGEM DE TRANSPOSICAO DAS IMAGENS */
 	position: relative;
 }
 .marginleft-0px{
 	margin-left: 0px;
 }
 .player-name{
-	padding: 0 0 30px 0 !important;
-	margin-top: 30px !important;
+	padding: 0px 0px 0px 0px !important;
+	margin-bottom: 10px !important;
 	position: relative;
-	top: 0px;
+	top: 4px;
 	text-align: center;
 	transition: all var(--PlayerTransTime);
 	text-indent: 0px !important;
-	--Font-size-playername: 1.75em;
+	--Font-size-playername: 1.25em;
 	font-size: var(--Font-size-playername);
 	-webkit-text-stroke: 0px transparent;
+	margin-left: ;
+}
+.header-time p,a{
+	box-sizing: content-box;
 }
 .header-time-a:hover .player-name {
 	transition: all var(--PlayerTransTime);
 	font-size: calc(var(--Font-size-playername) + 0.15em);
 	color: rgb(20, 73, 73);
-	text-shadow: 1px 1px 1px turquoise, 0px 0px 10px rgba(0,0,0,0.6);
+	text-shadow: 1px 1px 1px rgba(64, 224, 208, 0.508), 0px 0px 10px rgba(0,0,0,0.6);
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-smooth: subpixel-antialiased;
+	top: 0px;
 }
 .header-time-a:hover img {
 	transition: all var(--PlayerTransTime) !important;
@@ -536,14 +541,11 @@ td.glow2:after{
 	transition: all var(--PlayerTransTime);
 	position: relative;
 	height: auto;
-	width: auto;
-	min-height: 170px;
-	/* min-width: 120px; */
-	max-height: 100%;
+	max-height: 400px;
 	max-width: 100%;
 	vertical-align: middle;
 	top: 10px;
-	left: 0;
+	/* left: 0; */
 }
 #kncerato-a{
 	z-index: 1;
