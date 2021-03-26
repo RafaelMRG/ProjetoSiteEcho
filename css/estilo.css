@@ -108,14 +108,51 @@ font-family: 'MuseoModerno', cursive; */
   /*border: 1px solid red;*/
 }
 .menutop{
-	margin-top: 100px;
+	height: max-content;
+	margin-top: 140px;
+	height: 50px;
 	/* top:100px; */
 	position:relative;
-	margin-bottom: 120px;
+	margin-bottom: 140px;
 }
+.menutop:after{
+	margin: -1px;
+	box-sizing: content-box;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	border: 1px solid #0f16008c;
+	box-shadow: 0px 2px 1px #2944445f, 0px 2px 10px rgba(0,0,0,0.45);
+	z-index: -1;
+	border-radius: 5px;
+}
+
 .shadowmenu{
 	box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
 }
+
+.menu2{
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	justify-content: center;
+}
+.logo-main{
+	position: relative;
+	left: 0;
+	width: 65%;
+	overflow: visible;
+	/* transform: translateZ(0); */
+	/* -webkit-backface-visibility: hidden; */
+	/* -ms-transform: translateZ(0); */
+	/* -webkit-transform: translateZ(0); */
+}
+
 .m-cornerleft{
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -125,38 +162,73 @@ font-family: 'MuseoModerno', cursive; */
 	border-bottom-right-radius: 5px;
 }
 .menu{
+	position: relative;
 	background-color: #77b300;
 	height: 50px;
-	top: 100px;
+	/* top: 100px; */
 	font-family: 'Dosis', sans-serif;
+	display: flex;
+	flex-flow: row nowrap;
 }
-.menu:after{
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
-  z-index: -2;
-  border-radius: 5px;
-  }
+.menu ul,.menu li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu ul{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+.menu li{
+width: 25%;
+border-left: 1px solid #0000009a;
+}
+.link-menu{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	text-decoration: none;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	justify-items: ;
+	margin: 0;
+	padding: 0;
+	color: inherit;
+}
+.span_menu{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+	justify-content: center;
+	/* white-space: pre-wrap; */
+	color: inherit;
+}
+.span_menu i{
+	--PaddingFa: 6px;
+	padding-left: var(--PaddingFa);
+	padding-right: var(--PaddingFa);
+}
+
 .divisor_menu{
 	border-left: 1px solid darkslategray;
 	position: relative;
 }
-td.glow{
+a.glow{
 	transition: all 25ms linear;
 	position: relative;
 	z-index: 2;
 	color: rgba(0, 0, 0, 0.85);
 }
-td.glow:hover{
+a.glow:hover{
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
 	color: rgb(20, 73, 73);
 }
-td.glow:after{
+a.glow:after{
 	content: "";
 	top: 0;
 	bottom: 0;
@@ -168,28 +240,28 @@ td.glow:after{
 	z-index: -1;
 	/* box-shadow: 0px 50px 0px 0px transparent inset; */
 }
-td.glow:hover:after{
+a.glow:hover:after{
 	border-bottom: 44px solid #EBF2FA;
 	/* box-shadow: 0px 7px 0px 0px #89c400 inset; */
 }
-td.glow2{
+a.glow2{
 	transition: all 25ms linear;
 	position: relative;
 	z-index: 2;
 	color: rgba(0, 0, 0, 0.85);
 }
-td.glow2:hover{
+a.glow2:hover{
 	/* color: rgb(50, 50, 50); */
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
 	color: rgb(20, 73, 73);
 }
-td.glow2:hover:after{
+a.glow2:hover:after{
 	/* background-color: ghostwhite; */
 	/* border-bottom: 42px solidr gb(137, 196, 0); */
 	border-bottom: 44px solid #EBF2FA;
 	border-radius: 0px 5px 5px 0px;
 }
-td.glow2:after{
+a.glow2:after{
 	position: absolute;
 	z-index: -1;
 	content: "";
@@ -214,27 +286,12 @@ td.glow2:after{
 	align-content: stretch;
 	align-items: stretch;
 }
-.span_menu{
-	position: relative;
-	transform:translateY(50%);
-	display: inline-table;
-	white-space: pre-wrap;
-	color: inherit;
-}
+
 /* .span_menu:hover{
 	color:whitesmoke;
 
 } */
 
-.link-menu{
-	display: block;
-	text-decoration: none;
-	top: 0;
-	left: 0;
-	margin: auto;
-	height: 100%;
-	color: inherit;
-}
 
 .content{
 	position: relative;
@@ -335,7 +392,7 @@ td.glow2:after{
 	align-items: center;
 	justify-content: center;
 }
-.conteudo_ft ul,li{
+.conteudo_ft ul,.conteudo_ft li{
 	width: 100%;
 	display: flex;
 	list-style: none;
@@ -439,6 +496,7 @@ td.glow2:after{
 	border-bottom: 1px solid rgba(30,30,30,0.15);
 }
 .titulo h1{
+	font-size: 2rem;
 	padding: 0;
 	padding-left: 0;
 	margin: 0;
