@@ -277,6 +277,9 @@ td.glow2:after{
 .push{
 	height: 400px;
 }
+
+/* 🔽 INICIO REGRAS FOOT 🔽 */
+
 .foot_footer{
 	display: block;
 	position: relative;
@@ -378,6 +381,10 @@ td.glow2:after{
 	padding-right: 10px;
 	padding-top: 4px;
 }
+#hover-footer-color>li>a:hover{
+	color: rgb(20, 73, 73);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+}
 #ecodiagnosticadiv{
 		margin-left: 50px;
 		margin-right: 50px;
@@ -404,6 +411,8 @@ td.glow2:after{
 	filter: brightness(0.9) drop-shadow(0px 1px 0px rgba(0,0,0,0.4));
 	opacity: 80%;
 }
+
+/* 🔽 FIM REGRAS FOOT 🔽 */
 
 .conteudo-corpo{
 	display: flex;
@@ -472,12 +481,6 @@ td.glow2:after{
 	align-self: center;
 	border-radius: 1px;
 }
-
-#hover-footer-color>li>a:hover{
-	color: rgb(20, 73, 73);
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
-}
-
 .header-time{
 	--PlayerTransTime: 500ms;
 	transition: all var(--PlayerTransTime);
@@ -516,7 +519,6 @@ td.glow2:after{
 	--Font-size-playername: 1.25em;
 	font-size: var(--Font-size-playername);
 	-webkit-text-stroke: 0px transparent;
-	margin-left: ;
 }
 .header-time p,a{
 	box-sizing: content-box;
