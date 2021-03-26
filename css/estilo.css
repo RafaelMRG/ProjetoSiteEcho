@@ -784,3 +784,13 @@ td.glow2:after{
 	height: 66vh;
 	width: 40vw;
 }
+.iframe-twitch{
+	height: 450px;
+	width: 70%;
+	border-radius: 10px;
+	border-style: none;
+	position: relative;
+	margin: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
