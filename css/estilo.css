@@ -210,7 +210,7 @@ border-left: 1px solid #0000009a;
 }
 .span_menu i{
 	--PaddingFa: 6px;
-	padding-left: var(--PaddingFa);
+	padding-left: 0;
 	padding-right: var(--PaddingFa);
 }
 
@@ -382,6 +382,9 @@ a.glow2:after{
 #divider2{
 	margin-left: 8%;
 	margin-right: 2%;
+}
+#divider3{
+	display: none;
 }
 
 .conteudo_ft{
@@ -849,4 +852,150 @@ a.glow2:after{
 	margin: 60px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1){
+	body{
+		font-size: 150%;
+	}
+	.container{
+		position: relative;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.menutop{
+		width: 98%;
+		left: 1%;
+		margin: 50px 0px 50px 0px;
+		height: calc(50px * 4);
+	}
+	.menu2{
+		display: none;
+	}
+	.menu{
+		flex-flow: column wrap;
+		width: 100%;
+		border-radius: 5px;
+		font-size: 0.6em;
+		height: calc(50px * 4);
+		border: 1px solid rgba(0,0,0,0.3);
+		box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+	}
+	.menu ul{
+		flex-flow: column nowrap;
+		flex: 1 1 100%;
+		height: calc(50px * 4);
+	}
+	.menu li{
+		flex: 1 1 100%;
+		width: auto;
+		height: 50px;
+		border:none;
+		border-bottom: 1px solid rgba(41, 68, 68, 0.3);
+	}
+	.menu li:last-child{
+		border: none;
+	}
+	.menutop::after{
+		display: none;
+	}
+	#botao-4.glow2:hover:after{
+		border-radius: 0px 0px 5px 5px;
+	}
+	.conteudo-corpo{
+		padding: 1em 1em 2em 1em;
+	}
+	.push{
+		height: 350px;
+	}
+	.foot_footer{
+		margin-left: 2%;
+		margin-right: 2%;
+		height: max-content;
+		margin-bottom: 100px !important;
+	}
+	.foot_div{
+		padding: 15px;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+	.conteudo_ft{
+		width: 100%;
+		justify-self: center;
+		align-items: center;
+
+	}
+	.conteudo_ft:first-child{
+		margin-bottom: 25px;
+	}
+	.conteudo_ft a{
+		position: relative;
+		left: 25%;
+	}
+	.divider_ft{
+		border-left: none;
+		border-bottom: 1px solid darkslategray;
+	}
+	#divider1{
+		margin: 0;
+		margin: 2% 10% 2% 10%;
+		width: 10%;
+	}
+	#divider2{
+		margin: 0;
+		margin: 2% 10% 2% 10%;
+		width: 10%;
+	}
+	#divider3{
+		display: block;
+		margin: 0;
+		margin: 2% 10% 2% 10%;
+		width: 10%;
+	}
+	#ecodiagnosticadiv{
+		margin-top: 20px;
+		width: 100%;
+	}
+
+
+	/* /////////////////////// */
+	/* ////// time.html ////// */
+	/* /////////////////////// */
+	.header-time{
+		display: none;
+	}
+	.borda-players{
+		border: none;
+	}
+	.div-foto-player{
+		margin-left: 0;
+	}
+	.card-labels{
+		font-size: 35%;
+	}
+	.div-foto-player{
+		width: 35vw;
+		height: 35vw;
+	}
+	.last-social-label{
+		padding-right: 10px;
+	}
+	.label-span-1 span a{
+		height: 0.5em;
+		width: 0.5em;
+		align-self: center;
+		justify-self: center;
+		margin-left: 8px;
+		margin-right: 8px;
+		top: 0;
+	}
+	.label-span-1 a:hover::after{
+		margin: -0.42rem;
+	}
+	.span-label-socials{
+		display: flex;
+	}
+	.span-label-socials i{
+		font-size: 1.2em;
+	}
 }
