@@ -854,6 +854,9 @@ a.glow2:after{
 }
 
 @media only screen and (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1){
+	:root{
+		font-size: 50%;
+	}
 	body{
 		font-size: 150%;
 	}
@@ -875,7 +878,7 @@ a.glow2:after{
 		flex-flow: column wrap;
 		width: 100%;
 		border-radius: 5px;
-		font-size: 0.6em;
+		font-size: 1.6rem;
 		height: calc(50px * 4);
 		border: 1px solid rgba(0,0,0,0.3);
 		box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
@@ -932,7 +935,7 @@ a.glow2:after{
 		left: 35%;
 	}
 	.conteudo_ft{
-		font-size: 70%;
+		font-size: 1.6rem;
 	}
 	.divider_ft{
 		border-left: none;
@@ -954,9 +957,20 @@ a.glow2:after{
 		margin: 2% 10% 2% 10%;
 		width: 10%;
 	}
+	.imagem_footer{
+		/* transform: scale(0.8); */
+	}
+	.div-img-footer{
+		transform: scale(0.75);
+		margin-bottom: 0 !important;
+	}
 	#ecodiagnosticadiv{
 		margin-top: 20px;
 		width: 100%;
+		align-items: center;
+	}
+	#ecodiagnosticadiv a{
+		width: 55%;
 	}
 	::-webkit-scrollbar {
 		position: initial;
@@ -999,7 +1013,7 @@ a.glow2:after{
 		margin-left: 0;
 	}
 	.card-labels{
-		font-size: 35%;
+		font-size: 1rem;
 	}
 	.div-foto-player{
 		width: 35vw;
@@ -1027,9 +1041,9 @@ a.glow2:after{
 		font-size: 1.2em;
 	}
 
-	/* //////////////////////// */
-	/* /////// vip.html /////// */
-	/* //////////////////////// */
+	/* ////////////////////////////////// */
+	/* //////////// vip.html //////////// */
+	/* ////////////////////////////////// */
 
 	.div-vipform{
 		margin-left: 0;
@@ -1039,6 +1053,33 @@ a.glow2:after{
 		width: 100vw;
 	}
 	.discord-server{
-		font-size: 60%;
+		font-size: 2rem;
+	}
+
+	/* ///////////////////////////////// */
+	/* //////// servidores.html //////// */
+	/* ///////////////////////////////// */
+	.lista-servers{
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+	.iframe-serv{
+		margin: 15px auto !important;
+	}
+
+	/* ////////////////////////////////// */
+	/* /////////// index.html /////////// */
+	/* ////////////////////////////////// */
+
+	h1{
+		font-size: 3rem !important;
+	}
+	p{
+		font-size: 1.5rem;
+		padding: 1em 0em !important;
+	}
+	#logolineup{
+		margin: 0;
+		width: 100%;
 	}
 }
