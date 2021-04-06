@@ -957,9 +957,9 @@ a.glow2:after{
 		margin: 2% 10% 2% 10%;
 		width: 10%;
 	}
-	.imagem_footer{
-		/* transform: scale(0.8); */
-	}
+	/* .imagem_footer{
+		transform: scale(0.8);
+	} */
 	.div-img-footer{
 		transform: scale(0.75);
 		margin-bottom: 0 !important;
