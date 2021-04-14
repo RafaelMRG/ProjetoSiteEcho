@@ -379,7 +379,7 @@ a.glow2:after{
 	margin-right: 2%;
 }
 #divider2{
-	margin-left: 8%;
+	margin-left: 0;
 	margin-right: 2%;
 }
 #divider3{
@@ -406,6 +406,7 @@ a.glow2:after{
 	height: 85%;
 	flex-flow: column wrap;
 	justify-content: space-evenly;
+	left: -20%;
 }
 .conteudo_ft li{
 	flex-flow: row wrap;
@@ -446,7 +447,7 @@ a.glow2:after{
 }
 #ecodiagnosticadiv{
 	margin-left: 0px;
-	margin-right: 0px;
+	margin-right: 4%;
 	width: 30%;
 	height: 100%;
 	display: flex;
@@ -927,7 +928,10 @@ a.glow2:after{
 		width: 100%;
 		justify-self: center;
 		align-items: center;
-
+		font-size: 1.6rem;
+	}
+	.conteudo_ft ul{
+		left: 0px;
 	}
 	.conteudo_ft:first-child{
 		margin-bottom: 25px;
@@ -935,9 +939,6 @@ a.glow2:after{
 	.conteudo_ft a{
 		position: relative;
 		left: 35%;
-	}
-	.conteudo_ft{
-		font-size: 1.6rem;
 	}
 	.divider_ft{
 		border-left: none;
@@ -964,6 +965,7 @@ a.glow2:after{
 		margin-bottom: 0 !important;
 	}
 	#ecodiagnosticadiv{
+		margin-right: 0px;
 		margin-top: 20px;
 		width: 100%;
 		align-items: center;
