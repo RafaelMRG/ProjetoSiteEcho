@@ -445,16 +445,17 @@ a.glow2:after{
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
 }
 #ecodiagnosticadiv{
-		margin-left: 50px;
-		margin-right: 50px;
-		width: 30%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		overflow: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
 }
 #ecodiagnostica{
+	padding: 0em 1em;
 	opacity: 100%;
 	/* max-width: 100%; */
 	width: 100%;
