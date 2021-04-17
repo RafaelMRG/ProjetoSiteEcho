@@ -326,7 +326,7 @@ a.glow2:after{
 	background-attachment: local;
 	background-size: cover;
 	background-position-x: center;
-	opacity: 3.75%;
+	opacity: 3%;
 	mix-blend-mode: multiply;
 	background-repeat: no-repeat;
 	/* background-blend-mode: multiply; */
