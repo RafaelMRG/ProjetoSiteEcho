@@ -534,27 +534,76 @@ a.glow2:after{
 
 #conteudo-corpo__csgocard{
 	position: relative;
-	width: 540px;
-	box-shadow: 0px 0px 1px rgba(0,0,0,0.6);
+	box-shadow: 0px -2px 10px rgba(0,0,0,0.2), 0px -1px 1px rgba(0, 0, 0, 0.4);
 	margin: 2rem 0px;
-	border-radius: 6px;
+	border-radius: 10px;
 	align-self: center;
 	transition: 0.25s ease;
-	top: -10px;
-}
-
-#conteudo-corpo__csgocard:hover{
-	top: 0px;
-	box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+	border-top: 5px solid rgb(0,230,0);
+	pointer-events: none;
+	/* border-left: 8px solid rgb(0,220,0);
+	border-right: 8px solid rgb(0,220,0); */
+	/* border-left: 6px solid black; */
 }
 
 .conteudo-corpo__assinatura{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	display: block;
 	text-align: right;
 	font-weight: 900;
 	letter-spacing: 0px;
 	font-size: 0.9rem;
 	padding-right: 12rem;
+}
+
+.conteudo-corpo__barra-time{
+	display: inline;
+	position: relative;
+	text-align: center;
+	width: max-content;
+	align-self: center;
+	width: max-content;
+}
+
+.conteudo-corpo__vertime{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	justify-content: flex-end;
+}
+
+.conteudo-corpo__vertime a{
+	position: relative;
+	box-sizing: border-box;
+	padding: 0.6rem 1.25rem;
+	background-color: #669900;
+	border-radius: 6px;
+	color: rgba(23, 44, 44,1);
+	margin-right: 17%;
+	transition: all 150ms ease;
+	box-shadow: 0px 3px 0px #446161;
+	top: 0px;
+}
+
+.conteudo-corpo__vertime a:hover{
+	top: 2px;
+	background-color: #73ac01;
+	color: rgba(41, 68, 68, 1);
+	box-shadow: 0px 1px 0px #446161;
+}
+
+.conteudo-corpo__vertime a p{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	font-size: 1.5rem;
+	/* line-height: 0.9em; */
+	bottom: 1px;
+	text-indent: initial;
 }
 
 .divisor-apr-lista{
@@ -889,6 +938,15 @@ a.glow2:after{
 	margin-right: auto;
 }
 
+@media (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1){
+	.conteudo-corpo__barra-time{
+		width: 100%;
+	}
+
+	#conteudo-corpo__csgocard{
+		width: 100%;
+	}
+}
 @media (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 1){
 	:root{
 		font-size: 50%;
@@ -1127,6 +1185,14 @@ a.glow2:after{
 	#conteudo-corpo__csgocard{
 		width: 80%;
 		height: auto;
+	}
+
+	.conteudo-corpo__barra-time{
+		width: 100%;
+	}
+
+	#conteudo-corpo__csgocard{
+		width: 100%;
 	}
 
 	/* ///////////////////////////////// */
