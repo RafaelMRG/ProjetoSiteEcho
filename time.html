@@ -16,6 +16,7 @@
 	<meta name="description" content="Site da organização ECHO eSports, a ECHO conta com uma lineup de CS:GO e servidores do mesmo voltado para o treino individual" />
 	<meta name="google" content="nopagereadaloud"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/temaecho.js"></script>
 
@@ -23,29 +24,62 @@
 <body>
 	<div class="container">
 		<div class="row menutop">
-			<div class="col-3 menu m-cornerleft">
-					<img src="LogoBD.png" width="190px" style="margin-top: -95px;margin-left: 50%;overflow: visible;transform: translate(-50%,25px);" class="shadowed">
+
+			<div class="col-3 menu menu2 m-cornerleft">
+					<img src="LogoBD.png" class="logo-main shadowed">
 			</div>
+
 			<div class="col-9 menu m-cornerright">
-				<div class="alinhamento col-12" style="float: none;height: 100%;display: inline-block;">
-					<table class="col-12 alinhamento altura100pc" style="display: grid;">
-						<tr class="col-12 altura50px alinhamento">
-							<td class="divisor_menu col-3 glow altura50px alinhamento">
-								<a href="/index.html" class="link-menu"><span class="span_menu"><i class="fas fa-home" style="transform: translateY(-1px);"></i>   HOME</span></a>
-							</td>
-							<td class="divisor_menu col-3 glow altura50px alinhamento">
-								<a href="/time.html" class="link-menu"><span class="span_menu"><i class="fas fa-server" style="transform: translateY(-0.5px);"></i>   TIME</span></a>
-							</td>
-							<td class="divisor_menu col-3 glow altura50px alinhamento">
-								<a href="/servidores.html" class="link-menu"><span class="span_menu"><i class="fas fa-users" style="transform: translateY(-1px)"></i>   SERVIDORES</span></a>
-							</td>
-							<td class="divisor_menu col-3 glow2 altura50px alinhamento" id="ultimo-botao-menu">
-								<a href="/vip.html" class="link-menu"><span class="span_menu"><i class="fas fa-shopping-cart" style="transform: translateY(-1px)"></i>   VIP</span></a>
-							</td>
-						</tr>
-					</table>
-				</div>
+				<ul>
+
+
+					<li>
+						<a href="./index.html" class="link-menu glow">
+							<span class="span_menu">
+								<i class="fas fa-home">
+								</i>
+								SOBRE
+							</span>
+						</a>
+					</li>
+
+					<li class="menu--currentpage">
+						<a href="./time.html" class="link-menu glow">
+							<span class="span_menu">
+								<i class="fas fa-users"></i> TIME
+							</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="./twitch.html" class="link-menu glow">
+							<span class="span_menu">
+								<i class="fab fa-twitch"></i>JOGOS
+							</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="./servidores.html" class="link-menu glow">
+							<span class="span_menu">
+								<i class="fas fa-server"></i>
+								SERVIDORES
+							</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="./vip.html" class="link-menu glow2">
+							<span class="span_menu">
+								<i class="fas fa-shopping-cart"></i>VIP
+							</span>
+						</a>
+					</li>
+
+
+				</ul>
 			</div>
+
 		</div>
 
 		<!-- 🔽CORPO🔽 -->
@@ -94,7 +128,7 @@
 							<span class="label-span-1"><span>NOME</span><span>KAUAN CERATO</span></span>
 							<span class="label-span-1"><span>NICK</span><span>KNCERATO</span></span>
 							<span class="label-span-1"><span>IDADE</span><span>24 ANOS</span></span>
-							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span>
+							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span class="span-label-socials">
 								<a href="https://twitter.com/kncerato" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
 								<a href="https://www.instagram.com/kncerato/" target="_blank"><i class="fab fa-instagram fa-xs"></i></a>
 								<a href="https://www.twitch.tv/knceratoaqn/" target="_blank"><i class="fab fa-twitch fa-xs"></i></a>
@@ -110,7 +144,7 @@
 							<span class="label-span-1"><span>NOME</span><span>LEONARDO KURUSSU</span></span>
 							<span class="label-span-1"><span>NICK</span><span>FREQ</span></span>
 							<span class="label-span-1"><span>IDADE</span><span>19 ANOS</span></span>
-							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span>
+							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span class="span-label-socials">
 								<a href="https://twitter.com/freqfps" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
 								<a href="https://www.instagram.com/freqfps/" target="_blank"><i class="fab fa-instagram fa-xs"></i></a>
 								<a href="#card-player1"><i class="fab fa-twitch fa-xs"></i></a>
@@ -126,7 +160,7 @@
 							<span class="label-span-1"><span>NOME</span><span>RICHARD SEIDY</span></span>
 							<span class="label-span-1"><span>NICK</span><span>CHAY</span></span>
 							<span class="label-span-1"><span>IDADE</span><span>19 ANOS</span></span>
-							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span>
+							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span class="span-label-socials">
 								<a href="https://twitter.com/chayfps" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
 								<a href="https://www.instagram.com/chayfps/" target="_blank"><i class="fab fa-instagram fa-xs"></i></a>
 								<a href="https://www.twitch.tv/chayziK" target="_blank"><i class="fab fa-twitch fa-xs"></i></a>
@@ -142,7 +176,7 @@
 							<span class="label-span-1"><span>NOME</span><span>HENRIQUE MENACHO</span></span>
 							<span class="label-span-1"><span>NICK</span><span>T9RNAY</span></span>
 							<span class="label-span-1"><span>IDADE</span><span>19 ANOS</span></span>
-							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span>
+							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span class="span-label-socials">
 								<a href="https://twitter.com/turnayfps" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
 								<a href="https://www.instagram.com/t9rnay/" target="_blank"><i class="fab fa-instagram fa-xs"></i></a>
 								<a href="https://www.twitch.tv/t9rnay" target="_blank"><i class="fab fa-twitch fa-xs"></i></a>
@@ -158,7 +192,7 @@
 							<span class="label-span-1"><span>NOME</span><span>GUSTAVO RIBEIRO</span></span>
 							<span class="label-span-1"><span>NICK</span><span>GYZER</span></span>
 							<span class="label-span-1"><span>IDADE</span><span>23 ANOS</span></span>
-							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span>
+							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span class="span-label-socials">
 								<a href="https://twitter.com/gyzerfps" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
 								<a href="https://www.instagram.com/gugyzer/" target="_blank"><i class="fab fa-instagram fa-xs"></i></a>
 								<a href="#card-player4"><i class="fab fa-twitch fa-xs"></i></a>
@@ -174,7 +208,7 @@
 							<span class="label-span-1"><span>NOME</span><span>DENIS AVILA</span></span>
 							<span class="label-span-1"><span>NICK</span><span>BLV</span></span>
 							<span class="label-span-1"><span>IDADE</span><span>29 ANOS</span></span>
-							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span>
+							<span class="label-span-1 last-social-label"><span>SOCIALS</span><span class="span-label-socials">
 								<a href="https://twitter.com/denisblv" target="_blank"><i class="fab fa-twitter fa-xs"></i></a>
 								<a href="https://www.instagram.com/deniscavila/" target="_blank"><i class="fab fa-instagram fa-xs"></i></a>
 								<a href="#card-player5"><i class="fab fa-twitch fa-xs"></i></a>
@@ -197,7 +231,7 @@
 
 		<div class="foot_div">			<!-- 🔽 FOOTER CONTENT BOX 🔽 -->
 
-			<div class="conteudo_ft" style="width: 220px;"><img src="imagens/logobackground.svg" alt="" class="imagem_footer"></div>
+			<div class="conteudo_ft div-img-footer" style="width: 220px;"><img src="imagens/logobackground.svg" alt="" class="imagem_footer"></div>
 
 			<div class="divider_ft" id="divider1"></div>
 
@@ -215,13 +249,18 @@
 				<ul id="hover-footer-color" style="height: 80%;">
 					<li><a href="/index.html"><i class="fas fa-home"></i>HOME</a></li>
 					<li><a href="/time.html"><i class="fas fa-users"></i>TIME</a></li>
+					<li><a href="/twitch.html"><i class="fab fa-twitch"></i>JOGOS</a></li>
 					<li><a href="/servidores.html"><i class="fas fa-server"></i>SERVIDORES</a></li>
 					<li><a href="/vip.html"><i class="fas fa-shopping-cart"></i>VIP</a></li>
 				</ul>
 			</div>
 
+			<div class="divider_ft" id="divider3"></div>
+
 			<div id="ecodiagnosticadiv"> <!-- PATROCINIO -->
-				<a href="https://ecodiagnostica.com.br/" target="_blank"><img src="imagens/logoeco.png" alt="" id="ecodiagnostica" class="imagem_footer"></a>
+				<a href="https://blackdragons.com.br/" target="_blank"><img src="./imagens/blackdragons.svg" alt="" id="ecodiagnostica" class="imagem_footer"></a>
+
+				<a href="https://ecodiagnostica.com.br/" target="_blank"><img src="./imagens/logoeco.png" alt="" id="ecodiagnostica" class="imagem_footer"></a>
 			</div>
 		</div>
 	</footer>

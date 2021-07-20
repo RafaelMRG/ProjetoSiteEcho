@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 
-	<title>ECHO eSports - SERVIDORES</title>
+	<title>ECHO eSports - HOME</title>
 	<meta charset="utf-8">
 	<link href="css/all.css" rel="stylesheet">
 	<link href="css/fontawesome.css" rel="stylesheet">
@@ -11,14 +11,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Alata&family=Dosis:wght@700&family=Iceland&family=Jockey+One&family=MuseoModerno:wght@300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilo.css">
-	<link rel="icon" href="imagens/favicon64.png" sizes="64x64">
-	<link rel="canonical" href="/index.html" />
 	<meta name="description" content="Site da organização ECHO eSports, a ECHO conta com uma lineup de CS:GO e servidores do mesmo voltado para o treino individual" />
 	<meta name="google" content="nopagereadaloud"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/temaecho.js"></script>
 
 </head>
 <body>
@@ -51,7 +47,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li class="menu--currentpage">
 						<a href="./twitch.html" class="link-menu glow">
 							<span class="span_menu">
 								<i class="fab fa-twitch"></i>JOGOS
@@ -59,7 +55,7 @@
 						</a>
 					</li>
 
-					<li class="menu--currentpage">
+					<li>
 						<a href="./servidores.html" class="link-menu glow">
 							<span class="span_menu">
 								<i class="fas fa-server"></i>
@@ -87,32 +83,10 @@
 		<div class="row content">
 			<div class="conteudo-corpo">
 
-				<div class="titulo"><h1><img src="imagens/logobackground.svg" alt="" draggable="false" (dragstart)="false;">&nbsp;|&nbsp;SERVIDORES</h1></div>
+				<div class="titulo"><h1><img src="imagens/logobackground.svg" alt="" draggable="false" (dragstart)="false;">&nbsp;|&nbsp;Jogos Ao Vivo</h1></div>
 
-
-
-				<p>Nós da ECHO estamos inovando o método como atingimos nosso público alvo, hoje contamos com 3 servidores de CSGO que usamos para colocar nossa marca no mundo e trazer mais conhecimento para o nosso time, nossos servidores são acessados por 400 conexões únicas por dia, esta métrica mostra que o brasileiro está atrás de melhorar o seu gameplay, mostrando que a nossa decisão de abrir os servidores foi correta e nos orgulhamos disso.</p>
-
-				<div class="divisor-apr-lista"></div>
-
-				<!-- 🔽 INICIO LISTA DE SERVIDORES 🔽 -->
-
-				<div class="lista-servers">
-					<script
-						type="application/javascript">window.addEventListener('message', function (e) { if (e.data.uid && e.data.type === 'sizeUpdate') { var i = document.querySelector('iframe[name="' + e.data.uid + '"]'); i.style.width = e.data.payload.width; i.style.height = e.data.payload.height; } });</script>
-					<iframe class="iframe-serv"
-						src="https://cdn.battlemetrics.com/b/standardVertical/7683002.html?foreground=%23144949&linkColor=%2313462c&lines=%031e11&background=%23669900&chart=players%3A24H&chartColor=%23144949&showPlayers=&maxPlayersHeight=400"
-						frameborder=0 style="border:0" name="zfmca"></iframe>
-
-					<script
-						type="application/javascript">window.addEventListener('message', function (e) { if (e.data.uid && e.data.type === 'sizeUpdate') { var i = document.querySelector('iframe[name="' + e.data.uid + '"]'); i.style.width = e.data.payload.width; i.style.height = e.data.payload.height; } });</script>
-					<iframe class="iframe-serv"
-						src="https://cdn.battlemetrics.com/b/standardVertical/9498267.html?foreground=%23144949&linkColor=%2313462c&lines=%031e11&background=%23669900&chart=players%3A24H&chartColor=%23144949&showPlayers=&maxPlayersHeight=400"
-						frameborder=0 style="border:0" name="vivbc"></iframe>
-				</div>
-				<div class="discord-server"><i class="fab fa-discord fa-lg"></i>
-					<span class="discord-span">MsqWmkV</span>
-				</div>
+				<iframe class="iframe-twitch" src="https://player.twitch.tv/?channel=echoteamgg&parent=rafaelmrg.github.io" allowfullscreen="allowfullscreen">
+				</iframe>
 
 			</div>
 		</div>
@@ -120,7 +94,8 @@
 		<div class="push"></div>
 
 	</div>
-	<!-- 🔽 FOOTER START 🔽 -->
+
+	<!-- 🔽 FOOTER 🔽 -->
 
 	<footer class="foot_footer">
 
@@ -132,9 +107,9 @@
 
 			<div class="conteudo_ft">
 				<ul style="height: 65%;">
-					<li><a class="twitter" href="https://twitter.com/echoteamgg" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
-					<li><a class="twitch" href="https://www.twitch.tv/echoteamgg/" target="_blank"><i class="fab fa-twitch"></i>Twitch</a></li>
-					<li><a class="instagram" href="https://www.instagram.com/echoteamgg/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+					<li><a class="twitter" href="https://twitter.com/echoteamgg"  target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+					<li><a class="twitch" href="https://www.twitch.tv/echoteamgg/"  target="_blank"><i class="fab fa-twitch"></i>Twitch</a></li>
+					<li><a class="instagram" href="https://www.instagram.com/echoteamgg/"  target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
 				</ul>
 			</div>
 
@@ -158,8 +133,7 @@
 				<a href="https://ecodiagnostica.com.br/" target="_blank"><img src="./imagens/logoeco.png" alt="" id="ecodiagnostica" class="imagem_footer"></a>
 			</div>
 		</div>
-	</footer>
-	<!-- 🔽 FOOTER END 🔽 -->
 
+	</footer>
 </body>
 </html>
