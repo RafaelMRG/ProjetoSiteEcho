@@ -4,9 +4,7 @@ $(document).ready(function() {
 		function() {
 			var currentPlayer = $(this);
 
-			currentPlayer.siblings().each(function() {
-				$(this).addClass('fadeout');
-			});
+			currentPlayer.siblings().addClass('fadeout');
 		},
 		function() {
 			var currentPlayer = $(this);
